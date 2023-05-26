@@ -2,7 +2,7 @@ import unittest
 from restaurant import Table
 
 
-class UnitTests(unittest.TestCase):
+class UnitTests(unittest.TestCase): # class atribute on your own # it does help able to do things compare atrributes and the way we set the actaul and eexpected
     def setUp(self) -> None:
         self.table02 = Table(2)
         self.table05 = Table(5)
@@ -19,7 +19,7 @@ class UnitTests(unittest.TestCase):
             actual, expected,
             "Expected `order` method to create object in bill instance variable."
         )
-
+# all of this come from unit test beyond that point - refer to python dock 
     def test_order_no_quantity(self):
         self.table02.order('Food', 10.00)
         actual = self.table02.bill
